@@ -1,0 +1,12 @@
+http://192.168.31.246:5500/filter_remote/AdBlock.txt, tag=广告拦截, force-policy=reject, enabled=true
+
+http://192.168.31.246:5500/filter_remote/Domestic.txt, tag=国内网站, force-policy=direct, enabled=true
+
+http://192.168.31.246:5500/filter_remote/Apple_CDN.txt, tag=苹果, force-policy=direct, enabled=true
+
+http://192.168.31.246:5500/filter_remote/TikTok.txt, tag=tiktok, force-policy=proxy, enabled=true
+
+http://192.168.31.246:5500/filter_remote/Global.txt, tag=国外网站, force-policy=proxy, enabled=true
+
+
+static=🚀 节点选择, ♻️ 自动选择, 🇭🇰 香港,🇯🇵 日本,🇸🇬 新加坡,🇺🇸 美国, PROXY, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Available.png
