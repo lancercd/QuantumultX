@@ -7,6 +7,7 @@ host, music.apple.com, Apple_CDN
 host, mvod.itunes.apple.com, Apple_CDN
 # > App Store
 user-agent, com.apple.appstored*, Apple_CDN
+host, p14-buy.itunes.apple.com, Apple_CDN
 host-suffix, mzstatic.com, Apple_CDN
 host, iosapps.itunes.apple.com, Apple_CDN
 host, osxapps.itunes.apple.com, Apple_CDN

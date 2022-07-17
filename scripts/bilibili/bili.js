@@ -105,6 +105,15 @@ if (!body.hasOwnProperty('data')) {
     }
 }
 
+// if (-1 != $request.url.indexOf('/x/v2/view\?a') && 0 == body['code']) {
+//     body['data']['relates'] = body['data']['relates'].filter(function (item) {
+//         if (item.hasOwnProperty('is_ad')) {
+//             return false;
+//         }
+//         return true;
+//     });
+// }
+
 body = JSON.stringify(body);
 $done({
     body
