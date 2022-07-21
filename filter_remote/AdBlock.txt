@@ -157,6 +157,15 @@ ip-cidr, 222.73.156.235/32, AdBlock
 # Advertising 广告
 # > General
 host-keyword, adservice, AdBlock
+host-keyword, advertising, AdBlock
+host-keyword, advertise, AdBlock
+host-suffix, adclient.163.com, AdBlock
+host-suffix, adserver.163.com, AdBlock
+host-suffix, analytics.163.com, AdBlock
+host-suffix, iplay.163.com, AdBlock
+host-suffix, crash.163.com, AdBlock
+host-suffix, adgeo.163.com, AdBlock
+host-suffix, bobo.163.com, AdBlock
 host-suffix, ad.cmvideo.cn, AdBlock
 host-suffix, ad.daum.net, AdBlock
 host-suffix, adcolony.com, AdBlock
