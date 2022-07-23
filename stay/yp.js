@@ -37,6 +37,8 @@ let tasks = [
     header,
     () => factor("#fc_foot"),
     () => factor(".dplayer-mask"),
+    () => factor("#vod_shang"),
+    () => factor("#hengfu_pc_vod_shang"),
     () => factor("#dingpiao_wap"),
     () => factor("#p1"),
     () => factor("#hengfu_wap_vod_xia"),
