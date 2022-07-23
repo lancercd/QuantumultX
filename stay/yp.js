@@ -11,11 +11,13 @@
 // @downloadURL    https://github.com/lancercd/QuantumultX/raw/master/stay/yp.js
 // ==/UserScript==
 
-function factor(selector) {
+function factor(selector, remove = true) {
     const b = document.querySelector(selector);
     if (b) {
         b.style.display = "none";
-        b.remove();
+        if (remove) {
+            b.remove();
+        }
         return COMPLETE;
     }
     return CONTINUE;
@@ -44,6 +46,9 @@ let tasks = [
     () => factor("#hengfu_wap_vod_xia"),
     () => factor("#vod_txt"),
     () => factor(".stui-player.col-pd > p"),
+    () => factor(".flickity-slider li:nth-child(2)", false),
+    () => factor(".flickity-slider li:nth-child(3)", false),
+    () => factor(".flickity-slider li:nth-child(6)", false),
 ];
 
 if (document.readyState !== "loading") {
