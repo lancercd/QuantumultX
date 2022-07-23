@@ -41,7 +41,7 @@ let tasks = [
     () => factor("#p1"),
     () => factor("#hengfu_wap_vod_xia"),
     () => factor("#vod_txt"),
-    () => factor("document.querySelector('.stui-player.col-pd > p')"),
+    () => factor(".stui-player.col-pd > p"),
 ];
 
 if (document.readyState !== "loading") {
