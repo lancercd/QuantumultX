@@ -11,6 +11,16 @@
 // @downloadURL    https://github.com/lancercd/QuantumultX/raw/master/stay/yp.js
 // ==/UserScript==
 
+function factor(selector) {
+    const b = document.querySelector(selector);
+    if (b) {
+        b.style.display = "none";
+        b.remove();
+        return COMPLETE;
+    }
+    return CONTINUE;
+}
+
 function header() {
 
     document.body.style.paddingTop = "100px";
@@ -18,28 +28,19 @@ function header() {
 
     if (header) {
         header.style.height = "100px";
-    }
-
-    const topBanner = document.querySelector("#dingpiao_wap");
-
-    if (topBanner) {
-        topBanner.style.display = "none";
         return COMPLETE;
     }
     return CONTINUE;
 }
 
-function footerBanner() {
-    const booterBanner = document.querySelector("#fc_foot");
-    if (booterBanner) {
-        booterBanner.style.display = "none";
-        booterBanner.remove();
-        return COMPLETE;
-    }
-    return CONTINUE;
-}
-
-let tasks = [header, footerBanner];
+let tasks = [
+    header,
+    () => factor("#fc_foot"),
+    () => factor("#dingpiao_wap"),
+    () => factor("#p1"),
+    () => factor("#hengfu_wap_vod_xia"),
+    () => factor("#vod_txt"),
+];
 
 if (document.readyState !== "loading") {
     Stay_Inject.run(tasks, 100, 30, false).then((data) => { });
