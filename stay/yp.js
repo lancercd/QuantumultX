@@ -7,11 +7,11 @@
 // @match        *://jbfyrm7tbu7z15cau.com*
 // @run-at       document-start
 // @require      stay://vendor/stay-taskloop.js
-// @updateURL    https://raw.githubusercontent.com/shenruisi/Stay-Offical-Userscript/main/xhs/stay-xhs.update.js
-// @downloadURL    https://raw.githubusercontent.com/shenruisi/Stay-Offical-Userscript/main/xhs/stay-xhs.user.js
+// @updateURL    https://github.com/lancercd/QuantumultX/raw/master/stay/yp.js
+// @downloadURL    https://github.com/lancercd/QuantumultX/raw/master/stay/yp.js
 // ==/UserScript==
 
-function adBlock() {
+function header() {
 
     document.body.style.paddingTop = "100px";
     const header = document.querySelector("#header-top");
@@ -24,22 +24,23 @@ function adBlock() {
 
     if (topBanner) {
         topBanner.style.display = "none";
-    }
-
-    const booterBanner = document.querySelector("#fc_foot");
-    if (booterBanner) {
-        booterBanner.style.display = "none";
-        booterBanner.remove();
+        return COMPLETE;
     }
     return CONTINUE;
 }
 
-
-window.onload = () => {
-    let tasks = [adBlock];
-    MG_log('running');
-    Stay_Inject.run(tasks, 100, 30, false).then((data) => { });
+function footerBanner() {
+    const booterBanner = document.querySelector("#fc_foot");
+    if (booterBanner) {
+        booterBanner.style.display = "none";
+        booterBanner.remove();
+        return COMPLETE;
+    }
+    return CONTINUE;
 }
+
+let tasks = [header, footerBanner];
+
 if (document.readyState !== "loading") {
     Stay_Inject.run(tasks, 100, 30, false).then((data) => { });
 }
