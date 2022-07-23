@@ -156,6 +156,7 @@ ip-cidr, 222.73.156.235/32, AdBlock
 
 # Advertising 广告
 # > General
+host, img7.ng8855.com, AdBlock
 host-keyword, adservice, AdBlock
 host-keyword, advertising, AdBlock
 host-keyword, advertise, AdBlock
