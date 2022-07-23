@@ -46,9 +46,9 @@ let tasks = [
     () => factor("#hengfu_wap_vod_xia"),
     () => factor("#vod_txt"),
     () => factor(".stui-player.col-pd > p"),
-    () => factor(".flickity-slider li:nth-child(2)", false),
-    () => factor(".flickity-slider li:nth-child(3)", false),
-    () => factor(".flickity-slider li:nth-child(6)", false),
+    () => factor(".flickity-slider li:nth-child(6)"),
+    () => factor(".flickity-slider li:nth-child(3)"),
+    () => factor(".flickity-slider li:nth-child(2)"),
 ];
 
 if (document.readyState !== "loading") {
