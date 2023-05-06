@@ -342,7 +342,6 @@ host-suffix, googlesyndication.com, AdBlock
 # (J)
 # 京东
 host, dns.jd.com, AdBlock
-host-suffix, 101.124.19.122/32, AdBlock
 # (M)
 # > 美团
 host, flowplus.meituan.net, AdBlock
@@ -451,3 +450,15 @@ host, iyes.youku.com, AdBlock
 host, ehg-youtube.hitbox.com, AdBlock
 # > 知到
 host, app-advertise.zhihuishu.com, AdBlock
+
+# > other
+host, u1010.com, AdBlock
+host, kjimg10.360buyimg.com, AdBlock
+host, 556aaa.us, AdBlock
+host, xiod.xyz, AdBlock
+host, 8b4v.cn, AdBlock
+host, ky030.net, AdBlock
+host, 8b4v.cn, AdBlock
+host, 8b4v.cn, AdBlock
+
+
